@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@flarum/markdown",
+  "name": "@simonxeko/markdown",
   "dependencies": {
     "flarum-webpack-config": "0.1.0-beta.10",
     "mdarea": "^0.0.10",
