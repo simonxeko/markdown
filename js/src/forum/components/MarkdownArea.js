@@ -25,6 +25,7 @@
 
 
     function MarkdownArea(elem) {
+        console.log("Create MarkdownArea");
         this._useTab = true;
         this._useInline = true;
         this._indent = '    ';
@@ -135,15 +136,15 @@
 
 
     function handleEnterKey (elem, prefix, selection, postfix, shift) {
-        var info = !selection ? getLineInfo(prefix) : null;
-
         if (prefix.length > 0 && prefix.charAt(prefix.length - 1) != '\n') {
             // Ignore IME half-complete events
             return; 
         }
         
         prefix = prefix.substring(0, prefix.length - 1);
-
+        
+        let info = !selection ? getLineInfo(prefix) : null;
+        
         if (!selection && info.prefix) {
             if (!shift && info.prefix === info.line) {
                 prefix = prefix.substring(0, info.offset) + stripLast(info.prefix);

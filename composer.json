@@ -22,7 +22,7 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "Markdown",
+            "title": "Markdown (IME Fixed)",
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#000",
