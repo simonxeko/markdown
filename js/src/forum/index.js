@@ -9,7 +9,7 @@
 
 import { extend } from 'flarum/extend';
 import TextEditor from 'flarum/components/TextEditor';
-import MarkdownArea from 'mdarea';
+import MarkdownArea from './components/MarkdownArea';
 
 import './polyfills';
 import MarkdownToolbar from './components/MarkdownToolbar';
